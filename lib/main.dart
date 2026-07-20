@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
 
@@ -16,7 +16,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(title: Text("My App"),),
+        body: Center(child: Text("Hello",),),
+      ),
     );
   }
 }
-
