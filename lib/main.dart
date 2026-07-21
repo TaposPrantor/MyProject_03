@@ -87,6 +87,8 @@ void main() {
           child: Container(
             height: 200,
             width: 350,
+            //padding: EdgeInsets.all(30),
+            margin: EdgeInsets.all(30),
             decoration: BoxDecoration(
               color: Colors.green,
               borderRadius: BorderRadius.circular(35),
@@ -95,7 +97,17 @@ void main() {
                 width: 3,
                 strokeAlign: BorderSide.strokeAlignInside,
                 style: BorderStyle.solid
-              )
+              ),
+              //shape: BoxShape.circle
+            ),
+            alignment: Alignment.centerLeft,
+            child: Container(
+                margin: EdgeInsets.all(30),
+              height: 60,
+                width: 100,
+                color: Colors.red,
+                alignment: Alignment.center,
+                child: Text("Bangladesh")
             ),
           ),
         ),
