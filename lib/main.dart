@@ -75,34 +75,63 @@ void main() {
           ],
         ),
         body: Center(
+          child: Container(
+            height: 450,
+            width: 450,
+            decoration: BoxDecoration(
+              color: Colors.red,
+              //borderRadius: BorderRadius.circular(13),
+              shape: BoxShape.circle,
+            ),
+            alignment: Alignment.center,
             child: Container(
-              width: 300,
-              height: 200,
-              alignment: Alignment.center,
+              height: 350,
+              width: 350,
               decoration: BoxDecoration(
-                color: Colors.green,
-                border: Border.all(color: Colors.blue, width: 2)
+                color: Colors.greenAccent,
+                shape: BoxShape.circle,
               ),
-              child: Center(
+              alignment: Alignment.center,
+              child: Container(
+                height: 300,
+                width: 300,
+                decoration: BoxDecoration(
+                  color: Colors.purple,
+                  shape: BoxShape.circle,
+                ),
+                alignment: Alignment.center,
                 child: Container(
-                  width: 100,
-                  height: 100,
-                  alignment: Alignment.center,
+                  height: 200,
+                  width: 200,
                   decoration: BoxDecoration(
-                      color: Colors.red,
-                    shape: BoxShape.circle
+                    color: Colors.pink,
+                    shape: BoxShape.circle,
                   ),
-                  child: Text(
-                      "BD Flag",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                      )
+                  alignment: Alignment.center,
+                  child: Container(
+                    height: 100,
+                    width: 170,
+                    color: Colors.yellow,
+                    alignment: Alignment.center,
+                    child: Container(
+                      height: 70,
+                      width: 70,
+                      //color: Colors.green,
+                      decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        "BD",
+                        style: TextStyle(fontSize: 10, color: Colors.white),
+                      ),
+                    ),
                   ),
                 ),
               ),
-            )
+            ),
+          ),
         ),
       ),
     ),
