@@ -91,13 +91,13 @@ void main() {
             margin: EdgeInsets.all(30),
             decoration: BoxDecoration(
               color: Colors.green,
-              borderRadius: BorderRadius.circular(35),
-              border: Border.all(
-                color: Colors.pink,
-                width: 3,
-                strokeAlign: BorderSide.strokeAlignInside,
-                style: BorderStyle.solid
-              ),
+              //borderRadius: BorderRadius.circular(35),
+              border: Border(
+                top: BorderSide(color: Colors.red, width: 3),
+                right: BorderSide(color: Colors.purpleAccent, width: 2),
+                bottom: BorderSide(color:Colors.pink),
+                left: BorderSide(color: Colors.yellow, width: 5)
+              )
               //shape: BoxShape.circle
             ),
             alignment: Alignment.centerLeft,
