@@ -86,21 +86,16 @@ void main() {
         body: Center(
           child: Container(
             height: 200,
-            width: 300,
-            decoration: BoxDecoration(color: Colors.green),
-            alignment: Alignment.center,
-            child: Container(
-              height: 100,
-              width: 100,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(50)
-              ),
-              alignment: Alignment.center,
-              child: Text(
-                "BD Flag",
-                style: TextStyle(color: Colors.white, fontSize: 15),
-              ),
+            width: 350,
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(35),
+              border: Border.all(
+                color: Colors.pink,
+                width: 3,
+                strokeAlign: BorderSide.strokeAlignInside,
+                style: BorderStyle.solid
+              )
             ),
           ),
         ),
