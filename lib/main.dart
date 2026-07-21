@@ -1,28 +1,23 @@
 import 'package:flutter/material.dart';
 
-void main(){
+void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         //for cover my screen
-        backgroundColor: Colors.deepPurple,
+        //backgroundColor: Colors.deepPurple,
         drawer: Drawer(
           child: ListView(
             children: [
               SizedBox(
                 height: 100,
                 child: DrawerHeader(
-                    decoration: BoxDecoration(
-                      color: Colors.greenAccent
-                    ),
-                    child:Text(
-                      "My Menu",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30
-                      ),
-                    )
+                  decoration: BoxDecoration(color: Colors.greenAccent),
+                  child: Text(
+                    "My Menu",
+                    style: TextStyle(color: Colors.white, fontSize: 30),
+                  ),
                 ),
               ),
               ListTile(
@@ -59,24 +54,55 @@ void main(){
           elevation: 10,
           backgroundColor: Colors.blueGrey,
           //leading: Icon(Icons.menu_book, color: Colors.white,),
-          title: Text("AppBar", style: TextStyle(
-            color: Colors.white,
-            letterSpacing: 3,
-            fontSize: 35,
-            fontWeight: FontWeight.bold
-          ),),
-          actions: [
-            IconButton(onPressed: () {}, 
-                icon: Icon(Icons.notifications, color: Colors.white,)
+          title: Text(
+            "AppBar",
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 3,
+              fontSize: 35,
+              fontWeight: FontWeight.bold,
             ),
-            IconButton(onPressed: () {},
-                icon: Icon(Icons.search, color: Colors.white,)
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.notifications, color: Colors.white),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.search, color: Colors.white),
             ),
           ],
-
         ),
-
-        body: Card(),
+        body: Center(
+            child: Container(
+              width: 300,
+              height: 200,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.green,
+              ),
+              child: Center(
+                child: Container(
+                  width: 100,
+                  height: 100,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: Colors.red,
+                    borderRadius: BorderRadius.circular(50)
+                  ),
+                  child: Text(
+                      "BD Flag",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      )
+                  ),
+                ),
+              ),
+            )
+        ),
       ),
     ),
   );
