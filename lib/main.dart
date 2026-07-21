@@ -9,11 +9,20 @@ void main() {
         //backgroundColor: Colors.deepPurple,
         drawer: Drawer(
           child: ListView(
+            padding: EdgeInsets.all(8),
             children: [
               SizedBox(
                 height: 100,
                 child: DrawerHeader(
-                  decoration: BoxDecoration(color: Colors.greenAccent),
+                  decoration: BoxDecoration(
+                      //color: Colors.greenAccent,
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            "https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
+                        ),
+                      fit: BoxFit.cover
+                    ),
+                  ),
                   child: Text(
                     "My Menu",
                     style: TextStyle(color: Colors.white, fontSize: 30),
@@ -76,59 +85,21 @@ void main() {
         ),
         body: Center(
           child: Container(
-            height: 450,
-            width: 450,
-            decoration: BoxDecoration(
-              color: Colors.red,
-              //borderRadius: BorderRadius.circular(13),
-              shape: BoxShape.circle,
-            ),
+            height: 200,
+            width: 300,
+            decoration: BoxDecoration(color: Colors.green),
             alignment: Alignment.center,
             child: Container(
-              height: 350,
-              width: 350,
+              height: 100,
+              width: 100,
               decoration: BoxDecoration(
-                color: Colors.greenAccent,
-                shape: BoxShape.circle,
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(50)
               ),
               alignment: Alignment.center,
-              child: Container(
-                height: 300,
-                width: 300,
-                decoration: BoxDecoration(
-                  color: Colors.purple,
-                  shape: BoxShape.circle,
-                ),
-                alignment: Alignment.center,
-                child: Container(
-                  height: 200,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    color: Colors.pink,
-                    shape: BoxShape.circle,
-                  ),
-                  alignment: Alignment.center,
-                  child: Container(
-                    height: 100,
-                    width: 170,
-                    color: Colors.yellow,
-                    alignment: Alignment.center,
-                    child: Container(
-                      height: 70,
-                      width: 70,
-                      //color: Colors.green,
-                      decoration: BoxDecoration(
-                        color: Colors.green,
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      alignment: Alignment.center,
-                      child: Text(
-                        "BD",
-                        style: TextStyle(fontSize: 10, color: Colors.white),
-                      ),
-                    ),
-                  ),
-                ),
+              child: Text(
+                "BD Flag",
+                style: TextStyle(color: Colors.white, fontSize: 15),
               ),
             ),
           ),
