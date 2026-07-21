@@ -81,6 +81,7 @@ void main() {
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.green,
+                border: Border.all(color: Colors.blue, width: 2)
               ),
               child: Center(
                 child: Container(
@@ -89,13 +90,13 @@ void main() {
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                       color: Colors.red,
-                    borderRadius: BorderRadius.circular(50)
+                    shape: BoxShape.circle
                   ),
                   child: Text(
                       "BD Flag",
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 30,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       )
                   ),
