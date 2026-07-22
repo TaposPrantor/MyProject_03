@@ -220,76 +220,73 @@ void main() {
           ),
         ),
 
-        body: Column(
-          spacing: 25,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-                Icon(Icons.person),
-
-              ],
-            ),
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            spacing: 25,
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                  Icon(Icons.person),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     ),
