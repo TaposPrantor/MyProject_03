@@ -220,86 +220,41 @@ void main() {
           ),
         ),
 
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
+        body: Container(
+          height: 140,
+          width: double.infinity,
+          margin: EdgeInsets.all(5),
+          color: Colors.grey.shade500,
           child: Row(
-            spacing: 25,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                ],
+              Container(
+                height: double.infinity,
+                width: 80,
+                margin: EdgeInsets.all(3),
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage("https://img.drz.lazcdn.com/static/bd/p/988e59379d8b2181042887deba473e71.jpg_720x720q80.jpg"),
+                    fit: BoxFit.cover
+                  ),
+                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                //crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
+                  Text("FOGG PerFume"),
+                  Text("High-Quality Fogg scent tycoon")
                 ],
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                  Icon(Icons.person),
-                ],
-              ),
+              Text("10:45pm")
             ],
           ),
-        ),
+        )
       ),
     ),
   );
 }
 
-//actions: [
-//             IconButton(
-//               onPressed: () {},
-//               icon: Icon(Icons.notifications, color: Colors.white),
-//             ),
-//             IconButton(
-//               onPressed: () {},
-//               icon: Icon(Icons.search, color: Colors.white),
-//             ),
-//           ],
+
