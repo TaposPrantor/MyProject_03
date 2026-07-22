@@ -41,21 +41,12 @@ void main() {
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
                   splashColor: Colors.red.shade200,
-                  leading: Icon(
-                    Icons.home,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.home, color: Colors.blue),
                   title: Text(
                     "Home",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 16,
-                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
@@ -75,21 +66,12 @@ void main() {
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
                   splashColor: Colors.red.shade200,
-                  leading: Icon(
-                    Icons.person,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.person, color: Colors.blue),
                   title: Text(
                     "Profile",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 16,
-                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
@@ -109,21 +91,12 @@ void main() {
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
                   splashColor: Colors.red.shade200,
-                  leading: Icon(
-                    Icons.account_box,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.account_box, color: Colors.blue),
                   title: Text(
                     "About",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 16,
-                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
@@ -143,21 +116,12 @@ void main() {
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
                   splashColor: Colors.red.shade200,
-                  leading: Icon(
-                    Icons.settings,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.settings, color: Colors.blue),
                   title: Text(
                     "Settings",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 16,
-                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
@@ -177,21 +141,12 @@ void main() {
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
                   splashColor: Colors.red.shade200,
-                  leading: Icon(
-                    Icons.logout,
-                    color: Colors.blue,
-                  ),
+                  leading: Icon(Icons.logout, color: Colors.blue),
                   title: Text(
                     "Log Out",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600,
-                    ),
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  trailing: Icon(
-                    Icons.arrow_forward_ios,
-                    size: 16,
-                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
                   contentPadding: EdgeInsets.symmetric(
                     horizontal: 20,
                     vertical: 5,
@@ -224,37 +179,60 @@ void main() {
           height: 140,
           width: double.infinity,
           margin: EdgeInsets.all(5),
+          padding: EdgeInsets.all(5),
           color: Colors.grey.shade500,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
                 height: double.infinity,
-                width: 80,
-                margin: EdgeInsets.all(3),
+                width: 120,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                      image: NetworkImage("https://img.drz.lazcdn.com/static/bd/p/988e59379d8b2181042887deba473e71.jpg_720x720q80.jpg"),
-                    fit: BoxFit.cover
+                    image: NetworkImage(
+                      "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
+                    ),
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                //crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Text("FOGG PerFume"),
-                  Text("High-Quality Fogg scent tycoon")
-                ],
+              SizedBox(width: 2,),
+              Padding(
+                padding: const EdgeInsets.all(12.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 10,
+                  children: [
+                    Text(
+                        "FOGG PerFume",
+                        style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.orange
+                        )
+                    ),
+                    SizedBox(height: 10),
+                    Text("High-Quality Fogg scent tycoon"),
+                  ],
+                ),
               ),
-              Text("10:45pm")
+              Spacer(),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: [
+                  Text("10:45pm"),
+                  SizedBox(height: 10,),
+                  CircleAvatar(),
+                ],
+              )
             ],
           ),
-        )
+        ),
       ),
     ),
   );
 }
-
-
