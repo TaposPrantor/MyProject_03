@@ -175,63 +175,316 @@ void main() {
           ),
         ),
 
-        body: Container(
-          height: 140,
-          width: double.infinity,
-          margin: EdgeInsets.all(5),
-          padding: EdgeInsets.all(5),
-          color: Colors.grey.shade500,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                height: double.infinity,
-                width: 120,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
-                    ),
-                    fit: BoxFit.cover,
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("All"),
+                ),
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 65,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("UnRead"),
+                ),
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 80,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("Favourites"),
+                ),
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 60,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("Familly"),
+                ),
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 60,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("Groups"),
+                ),
+                Container(
+                  margin: EdgeInsets.all(3),
+                  height: 35,
+                  width: 120,
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(50)
+                  ),
+                  alignment: Alignment.center,
+                  child: Text("More Option +"),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                  height: 140,
+                  width: double.infinity,
+                  margin: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(5),
+                  color: Colors.deepPurple,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 2,),
+                      Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 10,
+                          children: [
+                            Text(
+                                "FOGG PerFume",
+                                style: TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.orange
+                                )
+                            ),
+                            SizedBox(height: 10),
+                            Text("High-Quality Fogg scent tycoon"),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 5,
+                        children: [
+                          Text("10:45pm"),
+                          //SizedBox(height: 10,),
+                          CircleAvatar(),
+                          Icon(Icons.email, size: 50,)
+                        ],
+                      )
+                    ],
                   ),
                 ),
-              ),
-              SizedBox(width: 2,),
-              Padding(
-                padding: const EdgeInsets.all(12.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  spacing: 10,
-                  children: [
-                    Text(
-                        "FOGG PerFume",
-                        style: TextStyle(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.orange
-                        )
-                    ),
-                    SizedBox(height: 10),
-                    Text("High-Quality Fogg scent tycoon"),
-                  ],
+                Container(
+                  height: 140,
+                  width: double.infinity,
+                  margin: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(5),
+                  color: Colors.blue,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 2,),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 10,
+                          children: [
+                            Text(
+                                "FOGG PerFume",
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.orange
+                                )
+                            ),
+                            SizedBox(height: 10),
+                            Text("High-Quality Fogg scent tycoon"),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 5,
+                        children: [
+                          Text("10:45pm"),
+                          //SizedBox(height: 10,),
+                          CircleAvatar(),
+                          Icon(Icons.email, size: 50,)
+                        ],
+                      )
+                    ],
+                  ),
                 ),
-              ),
-              Spacer(),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                spacing: 5,
-                children: [
-                  Text("10:45pm"),
-                  //SizedBox(height: 10,),
-                  CircleAvatar(),
-                  Icon(Icons.email, size: 50,)
-                ],
-              )
-            ],
-          ),
+                Container(
+                  height: 140,
+                  width: double.infinity,
+                  margin: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(5),
+                  color: Colors.deepPurple,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 2,),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 10,
+                          children: [
+                            Text(
+                                "FOGG PerFume",
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.orange
+                                )
+                            ),
+                            SizedBox(height: 10),
+                            Text("High-Quality Fogg scent tycoon"),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 5,
+                        children: [
+                          Text("10:45pm"),
+                          //SizedBox(height: 10,),
+                          CircleAvatar(),
+                          Icon(Icons.email, size: 50,)
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 140,
+                  width: double.infinity,
+                  margin: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(5),
+                  color: Colors.blue,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: NetworkImage(
+                              "https://cdn.salla.sa/onxjbX/519671ca-9790-4351-b22b-048b27f25ce3-1000x1000-YcNuO8P8OV0PlITPopNZFzzKM5cowGcQTQCndQbJ.png",
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 2,),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          spacing: 10,
+                          children: [
+                            Text(
+                                "FOGG PerFume",
+                                style: TextStyle(
+                                    fontSize: 25,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.orange
+                                )
+                            ),
+                            SizedBox(height: 10),
+                            Text("High-Quality Fogg scent tycoon"),
+                          ],
+                        ),
+                      ),
+                      Spacer(),
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 5,
+                        children: [
+                          Text("10:45pm"),
+                          //SizedBox(height: 10,),
+                          CircleAvatar(),
+                          Icon(Icons.email, size: 50,)
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+            
+              ],
+            ),
+          ],
         ),
       ),
     ),
