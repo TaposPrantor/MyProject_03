@@ -7,6 +7,91 @@ void main() {
       home: Scaffold(
         //for cover my screen
         //backgroundColor: Colors.deepPurple,
+        endDrawer: Drawer(
+          child: ListView(
+            children: [
+              SizedBox(
+                height: 100,
+                child: DrawerHeader(
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage(
+                            "https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
+                        ),
+                      fit: BoxFit.cover
+                    )
+                  ),
+                    child: Text("Menu Item?Bar", style: TextStyle(fontSize: 23, color: Colors.red),)
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.person),
+                  title: Text("Profile"),
+                  onTap: () {},
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.home),
+                  title: Text("Home"),
+                  onTap: () {},
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.account_box_outlined),
+                  title: Text("About"),
+                  onTap: () {},
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.settings),
+                  title: Text("Setting"),
+                  onTap: () {},
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.info_outline),
+                  title: Text("Information"),
+                  onTap: () {},
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  leading: Icon(Icons.logout),
+                  title: Text("Log Out"),
+                  onTap: () {},
+                ),
+              )
+
+            ],
+          ),
+        ),
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         drawer: Drawer(
           child: ListView(
             padding: EdgeInsets.all(8),
@@ -72,42 +157,20 @@ void main() {
               fontWeight: FontWeight.bold,
             ),
           ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.notifications, color: Colors.white),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.search, color: Colors.white),
-            ),
-          ],
+
         ),
         body: Center(
           child: Container(
             height: 200,
-            width: 350,
-            //padding: EdgeInsets.all(30),
-            margin: EdgeInsets.all(30),
+              width: 350,
             decoration: BoxDecoration(
-              color: Colors.green,
-              //borderRadius: BorderRadius.circular(35),
+              color: Colors.red,
               border: Border(
-                top: BorderSide(color: Colors.red, width: 3),
-                right: BorderSide(color: Colors.purpleAccent, width: 2),
-                bottom: BorderSide(color:Colors.pink),
-                left: BorderSide(color: Colors.yellow, width: 5)
+                top: BorderSide(color: Colors.greenAccent, width: 3),
+                right: BorderSide(color: Colors.grey, width: 3),
+                bottom: BorderSide(color: Colors.green, width: 3),
+                left: BorderSide(color: Colors.purple, width: 3)
               )
-              //shape: BoxShape.circle
-            ),
-            alignment: Alignment.centerLeft,
-            child: Container(
-                margin: EdgeInsets.all(30),
-              height: 60,
-                width: 100,
-                color: Colors.red,
-                alignment: Alignment.center,
-                child: Text("Bangladesh")
             ),
           ),
         ),
@@ -115,3 +178,15 @@ void main() {
     ),
   );
 }
+
+
+//actions: [
+//             IconButton(
+//               onPressed: () {},
+//               icon: Icon(Icons.notifications, color: Colors.white),
+//             ),
+//             IconButton(
+//               onPressed: () {},
+//               icon: Icon(Icons.search, color: Colors.white),
+//             ),
+//           ],
