@@ -222,11 +222,12 @@ void main() {
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
-
+                spacing: 5,
                 children: [
                   Text("10:45pm"),
-                  SizedBox(height: 10,),
+                  //SizedBox(height: 10,),
                   CircleAvatar(),
+                  Icon(Icons.email, size: 50,)
                 ],
               )
             ],
