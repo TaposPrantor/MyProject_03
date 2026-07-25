@@ -211,7 +211,7 @@ void main() {
               children: [
                 Container(
                   height: double.infinity,
-                  width: 150,
+                  width: 120,
                   margin: EdgeInsets.all(5),
                   //color: Colors.blue,
                   decoration: BoxDecoration(
@@ -221,7 +221,84 @@ void main() {
                   ),
                     borderRadius: BorderRadius.circular(10)
                 ),
-                )
+                ),
+                Expanded(
+                  child: Column(
+                    spacing: 3,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(height: 5,),
+                      Row(
+                        children: [
+                          Text(
+                              "AirPode/Airbut",
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              letterSpacing: 2
+                            ),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "Brand :Oraimo genuine vs 2.0",
+                            style: TextStyle(
+                                fontSize: 14,
+                                //color: Colors.blue
+                            ),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "Discount Price : ৳1990",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Colors.deepOrange,
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            "Base Price : ৳2160",
+                            style: TextStyle(
+                                fontSize: 14,
+                                color: Colors.orange,
+                                fontWeight: FontWeight.bold
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                        children: [
+                          Row(
+                            children: [
+                              Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                              Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                              Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                              Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                              Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                            ],
+                          ),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.add_circle,
+                                color: Colors.green,
+                                size: 30,
+                              )
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
