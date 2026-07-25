@@ -209,7 +209,15 @@ void main() {
                 Container(
                   height: double.infinity,
                   width: 150,
-                  color: Colors.blue,
+                  margin: EdgeInsets.all(5),
+                  //color: Colors.blue,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                      fit: BoxFit.cover
+                  ),
+                    borderRadius: BorderRadius.circular(10)
+                ),
                 )
               ],
             ),
