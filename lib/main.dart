@@ -174,8 +174,26 @@ void main() {
             ),
           ),
           actions: [
-            Icon(Icons.search, color: Colors.white,),
-            Icon(Icons.refresh, color: Colors.white,)
+            IconButton(
+              onPressed: () {
+                // Search action
+              },
+              icon: const Icon(Icons.search),
+              tooltip: "Search",
+            ),
+            IconButton(
+              onPressed: () {
+                // Refresh action
+              },
+              icon: const Icon(Icons.refresh),
+              tooltip: "Refresh",
+            ),
+            IconButton(
+                onPressed: () {}, 
+                icon: Icon(Icons.notifications),
+              tooltip: "Notifications",
+            ),
+            const SizedBox(width: 10),
           ],
         ),
 
