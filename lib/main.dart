@@ -199,11 +199,14 @@ void main() {
 
 
         body: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 7),
+          padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 4),
           child: Container(
-            color: Colors.red.shade100,
             height: 130,
             width: double.infinity,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              color: Colors.red.shade100,
+            ),
             child: Row(
               children: [
                 Container(
