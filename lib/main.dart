@@ -173,108 +173,14 @@ void main() {
               fontWeight: FontWeight.bold,
             ),
           ),
+          actions: [
+            Icon(Icons.search, color: Colors.white,),
+            Icon(Icons.refresh, color: Colors.white,)
+          ],
         ),
 
-        body: Column(
-          children: [
-            Row(
-              children: [
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 50,
-                      color: Colors.red,
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 50,
-                      color: Colors.green,
-                    )
-                  ],
-                ),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 100,
-                      color: Colors.red,
-                    ),
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 100,
-                      color: Colors.blue,
-                    )
-                  ],
-                ),
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 50,
-                      color: Colors.red,
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.all(5),
-                      //padding: EdgeInsets.all(5),
-                      height: 100,
-                      width: 50,
-                      color: Colors.green,
-                    )
-                  ],
-                ),
-                Container(
-                  height: 95,
-                  width: 40,
-                  color: Colors.purple,
-                )
-              ],
-            ),
-            Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(15)
-              ),
-              child: Container(
-                height: 25,
-                width: double.infinity,
-                //color: Colors.grey,
-                alignment: Alignment.center,
-                child: Text("Bangladesh"),
-              ),
-            ),
-            Column(
-              children: [
-                Container(
-                  height: 500,
-                  width: 300,
-                  margin: EdgeInsets.all(5),
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
-                    color: Colors.pink,
-                  ),
-                )
-              ],
-            )
-          ],
+        body:Scaffold(
+          
         )
       ),
     ),
