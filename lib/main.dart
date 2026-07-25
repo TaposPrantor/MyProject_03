@@ -202,616 +202,1054 @@ void main() {
           padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 4),
           child: ListView(
             children: [
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                          fit: BoxFit.cover
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                            fit: BoxFit.cover
+                        ),
+                          borderRadius: BorderRadius.circular(10)
                       ),
-                        borderRadius: BorderRadius.circular(10)
-                    ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                  "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                  letterSpacing: 2
+                      ),
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                    "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                    letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.deepOrange,
+                                    fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
                                     //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  color: Colors.deepOrange,
-                                  fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
-                                ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                              fit: BoxFit.cover
-                          ),
-                          borderRadius: BorderRadius.circular(10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    letterSpacing: 2
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  //color: Colors.blue
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                              fit: BoxFit.cover
-                          ),
-                          borderRadius: BorderRadius.circular(10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    letterSpacing: 2
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  //color: Colors.blue
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                              fit: BoxFit.cover
-                          ),
-                          borderRadius: BorderRadius.circular(10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    letterSpacing: 2
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  //color: Colors.blue
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                              fit: BoxFit.cover
-                          ),
-                          borderRadius: BorderRadius.circular(10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    letterSpacing: 2
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  //color: Colors.blue
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
-              Container(
-                height: 130,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.red.shade100,
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      height: double.infinity,
-                      width: 120,
-                      margin: EdgeInsets.all(5),
-                      //color: Colors.blue,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
-                              fit: BoxFit.cover
-                          ),
-                          borderRadius: BorderRadius.circular(10)
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
                       ),
-                    ),
-                    Expanded(
-                      child: Column(
-                        spacing: 3,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(height: 5,),
-                          Row(
-                            children: [
-                              Text(
-                                "AirPode/Airbut",
-                                style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.black,
-                                    letterSpacing: 2
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Brand :Oraimo genuine vs 2.0",
-                                style: TextStyle(
-                                  fontSize: 14,
-                                  //color: Colors.blue
-                                ),
-                              )
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              Text(
-                                "Discount Price : ৳1990",
-                                style: TextStyle(
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
                                     fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                              SizedBox(width: 10,),
-                              Text(
-                                "Base Price : ৳2160",
-                                style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.orange,
-                                    fontWeight: FontWeight.bold
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                            children: [
-                              Row(
-                                children: [
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                  Icon(Icons.star, color: Colors.deepOrange, size: 20,),
-                                ],
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.add_circle,
-                                    color: Colors.green,
-                                    size: 30,
-                                  )
-                              )
-                            ],
-                          ),
-                        ],
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 130,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.red.shade100,
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: double.infinity,
+                        width: 120,
+                        margin: EdgeInsets.all(5),
+                        //color: Colors.blue,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          spacing: 3,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            SizedBox(height: 5,),
+                            Row(
+                              children: [
+                                Text(
+                                  "AirPode/Airbut",
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black,
+                                      letterSpacing: 2
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Brand :Oraimo genuine vs 2.0",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    //color: Colors.blue
+                                  ),
+                                )
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  "Discount Price : ৳1990",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                                SizedBox(width: 10,),
+                                Text(
+                                  "Base Price : ৳2160",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: Colors.orange,
+                                      fontWeight: FontWeight.bold
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                    Icon(Icons.star, color: Colors.deepOrange, size: 20,),
+                                  ],
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add_circle,
+                                      color: Colors.green,
+                                      size: 30,
+                                    )
+                                )
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
