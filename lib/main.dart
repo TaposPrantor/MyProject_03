@@ -197,9 +197,24 @@ void main() {
           ],
         ),
 
-        body:Scaffold(
-          
-        )
+
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 7),
+          child: Container(
+            color: Colors.red.shade100,
+            height: 130,
+            width: double.infinity,
+            child: Row(
+              children: [
+                Container(
+                  height: double.infinity,
+                  width: 150,
+                  color: Colors.blue,
+                )
+              ],
+            ),
+          ),
+        ),
       ),
     ),
   );
