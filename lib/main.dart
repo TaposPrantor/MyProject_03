@@ -161,7 +161,7 @@ void main() {
           centerTitle: true,
           toolbarHeight: 64,
           elevation: 10,
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.deepOrange.shade300,
           foregroundColor: Colors.green,
           //leading: Icon(Icons.menu_book, color: Colors.white,),
           title: Text(
@@ -178,19 +178,19 @@ void main() {
               onPressed: () {
                 // Search action
               },
-              icon: const Icon(Icons.search),
+              icon: const Icon(Icons.search, color: Colors.white,),
               tooltip: "Search",
             ),
             IconButton(
               onPressed: () {
                 // Refresh action
               },
-              icon: const Icon(Icons.refresh),
+              icon: const Icon(Icons.refresh, color: Colors.white,),
               tooltip: "Refresh",
             ),
             IconButton(
                 onPressed: () {}, 
-                icon: Icon(Icons.notifications),
+                icon: Icon(Icons.notifications, color: Colors.white,),
               tooltip: "Notifications",
             ),
             const SizedBox(width: 10),
