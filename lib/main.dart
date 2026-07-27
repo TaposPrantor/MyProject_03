@@ -154,6 +154,31 @@ void main() {
                   onTap: () {},
                 ),
               ),
+              Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)
+                ),
+                child: ListTile(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  tileColor: Colors.white,
+                  hoverColor: Colors.red.shade100,
+                  splashColor: Colors.red.shade100,
+                  leading: Icon(Icons.logout, color: Colors.blue),
+                  title: Text(
+                    "Log Out",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 5,
+                  ),
+                  onTap: () {},
+                ),
+              )
             ],
           ),
         ),
@@ -220,7 +245,7 @@ void main() {
                         //color: Colors.blue,
                         decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: NetworkImage("https://static-01.daraz.com.bd/p/c22832f6c5f082dd5b61d3d822e65568.jpg"),
+                              image: NetworkImage("https://fortune.com/img-assets/wp-content/uploads/2016/12/gettyimages-599935362.jpg?w=1440&q=75"),
                             fit: BoxFit.cover
                         ),
                           borderRadius: BorderRadius.circular(10)
