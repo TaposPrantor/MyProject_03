@@ -227,6 +227,14 @@ void main() {
           padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 4),
           child: ListView(
             children: [
+              TextField(
+                decoration:InputDecoration(
+                  hintText: "Search",
+                  border:OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12)
+                  )
+                )
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
