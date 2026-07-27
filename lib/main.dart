@@ -231,8 +231,14 @@ void main() {
                 decoration:InputDecoration(
                   hintText: "Search",
                   border:OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12)
-                  )
+                      borderRadius: BorderRadius.circular(12),
+                  ),
+                  enabledBorder:OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.green
+                    )
+                  ),
+                  suffixIcon: Icon(Icons.search)
                 )
               ),
               Padding(
