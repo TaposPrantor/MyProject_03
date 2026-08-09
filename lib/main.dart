@@ -227,19 +227,22 @@ void main() {
           padding: const EdgeInsets.symmetric(vertical: 5,horizontal: 4),
           child: ListView(
             children: [
-              TextField(
-                decoration:InputDecoration(
-                  hintText: "Search",
-                  border:OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                  ),
-                  enabledBorder:OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.green
-                    )
-                  ),
-                  suffixIcon: Icon(Icons.search)
-                )
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  decoration:InputDecoration(
+                    hintText: "Search",
+                    border:OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                    ),
+                    enabledBorder:OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.green
+                      )
+                    ),
+                    suffixIcon: Icon(Icons.search)
+                  )
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
