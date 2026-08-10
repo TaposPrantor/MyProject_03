@@ -232,7 +232,7 @@ void main() {
                 child: TextField(
                   decoration:InputDecoration(
                     hintText: "Search",
-                    labelText: "Search",
+                    labelText: "Search",//for show
                     border:OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
                     ),
