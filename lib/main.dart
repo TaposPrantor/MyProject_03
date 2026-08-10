@@ -1298,6 +1298,9 @@ void main() {
             ],
           ),
         ),
+
+
+        //want to add BottomNavigationBar
       ),
     ),
   );
