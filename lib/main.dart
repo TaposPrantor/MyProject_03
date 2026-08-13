@@ -178,6 +178,31 @@ void main() {
                   ),
                   onTap: () {},
                 ),
+              ),
+              Card(
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)
+                ),
+                child: ListTile(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  tileColor: Colors.white,
+                  hoverColor: Colors.red.shade100,
+                  splashColor: Colors.red.shade100,
+                  leading: Icon(Icons.logout, color: Colors.blue),
+                  title: Text(
+                    "Log Out",
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                  trailing: Icon(Icons.arrow_forward_ios, size: 16),
+                  contentPadding: EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 5,
+                  ),
+                  onTap: () {},
+                ),
               )
             ],
           ),
@@ -1301,6 +1326,7 @@ void main() {
 
 
         //want to add BottomNavigationBar
+
       ),
     ),
   );
