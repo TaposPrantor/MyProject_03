@@ -14,8 +14,15 @@ void main(){
               color: Colors.deepOrange
             ),
           ),
+          centerTitle: true,
           backgroundColor: Colors.orange.shade50,
           toolbarHeight: 50,
+          actions: [
+            Icon(Icons.search),
+            SizedBox(width: 10,),
+            Icon(Icons.notifications),
+            SizedBox(width: 10,),
+          ],
         ),
       ),
     )
