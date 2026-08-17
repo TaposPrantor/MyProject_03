@@ -2,7 +2,21 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    MyApp()
+  );
+}
+
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         //for cover my screen
@@ -182,11 +196,11 @@ void main() {
               Card(
                 elevation: 5,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)
+                    borderRadius: BorderRadius.circular(15)
                 ),
                 child: ListTile(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)
+                      borderRadius: BorderRadius.circular(15)
                   ),
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
@@ -207,11 +221,11 @@ void main() {
               Card(
                 elevation: 5,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15)
+                    borderRadius: BorderRadius.circular(15)
                 ),
                 child: ListTile(
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15)
+                      borderRadius: BorderRadius.circular(15)
                   ),
                   tileColor: Colors.white,
                   hoverColor: Colors.red.shade100,
@@ -264,8 +278,8 @@ void main() {
               tooltip: "Refresh",
             ),
             IconButton(
-                onPressed: () {}, 
-                icon: Icon(Icons.notifications, color: Colors.white,),
+              onPressed: () {},
+              icon: Icon(Icons.notifications, color: Colors.white,),
               tooltip: "Notifications",
             ),
             const SizedBox(width: 10),
@@ -281,19 +295,19 @@ void main() {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextField(
-                  decoration:InputDecoration(
-                    hintText: "Search",
-                    labelText: "Search",//for show
-                    border:OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                    ),
-                    enabledBorder:OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.green
-                      )
-                    ),
-                    suffixIcon: Icon(Icons.search)
-                  )
+                    decoration:InputDecoration(
+                        hintText: "Search",
+                        labelText: "Search",//for show
+                        border:OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        enabledBorder:OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Colors.green
+                            )
+                        ),
+                        suffixIcon: Icon(Icons.search)
+                    )
                 ),
               ),
               Padding(
@@ -313,12 +327,12 @@ void main() {
                         margin: EdgeInsets.all(5),
                         //color: Colors.blue,
                         decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: NetworkImage("https://fortune.com/img-assets/wp-content/uploads/2016/12/gettyimages-599935362.jpg?w=1440&q=75"),
-                            fit: BoxFit.cover
+                            image: DecorationImage(
+                                image: NetworkImage("https://fortune.com/img-assets/wp-content/uploads/2016/12/gettyimages-599935362.jpg?w=1440&q=75"),
+                                fit: BoxFit.cover
+                            ),
+                            borderRadius: BorderRadius.circular(10)
                         ),
-                          borderRadius: BorderRadius.circular(10)
-                      ),
                       ),
                       Expanded(
                         child: Column(
@@ -329,12 +343,12 @@ void main() {
                             Row(
                               children: [
                                 Text(
-                                    "AirPode/Airbut",
+                                  "AirPode/Airbut",
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.black,
-                                    letterSpacing: 2
+                                      letterSpacing: 2
                                   ),
                                 )
                               ],
@@ -344,8 +358,8 @@ void main() {
                                 Text(
                                   "Brand :Oraimo genuine vs 2.0",
                                   style: TextStyle(
-                                      fontSize: 14,
-                                      //color: Colors.blue
+                                    fontSize: 14,
+                                    //color: Colors.blue
                                   ),
                                 )
                               ],
@@ -355,9 +369,9 @@ void main() {
                                 Text(
                                   "Discount Price : ৳1990",
                                   style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.deepOrange,
-                                    fontWeight: FontWeight.bold
+                                      fontSize: 14,
+                                      color: Colors.deepOrange,
+                                      fontWeight: FontWeight.bold
                                   ),
                                 ),
                                 SizedBox(width: 10,),
@@ -1354,6 +1368,7 @@ void main() {
         //want to add BottomNavigationBar
 
       ),
-    ),
-  );
+    );
+  }
 }
+
