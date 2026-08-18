@@ -6,7 +6,7 @@ void main(){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu),
+          leading: Icon(Icons.menu, color: Colors.deepOrange,),
           title: Text(
             "My Project 02",
             style: TextStyle(
@@ -19,9 +19,9 @@ void main(){
           backgroundColor: Colors.orange.shade50,
           toolbarHeight: 50,
           actions: [
-            Icon(Icons.search),
+            Icon(Icons.search, color: Colors.deepOrange,),
             SizedBox(width: 10,),
-            Icon(Icons.notifications),
+            Icon(Icons.notifications, color: Colors.deepOrange,),
             SizedBox(width: 10,),
           ],
         ),
