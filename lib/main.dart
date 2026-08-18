@@ -26,21 +26,26 @@ void main(){
           ],
         ),
         body: Center(
-          child: Container(
-            height: 40,
-            width: 180,
-            child: Card(
-              child: Center(
-                child: Text(
-                  "Tapos Roy",
-                  style: TextStyle(
-                      color: Colors.green,
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
+            ],
           ),
         ),
       ),
