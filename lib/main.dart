@@ -6,7 +6,7 @@ void main(){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu, color: Colors.deepOrange,),
+          leading: Icon(Icons.menu, color: Colors.deepOrange,), // color not needed
           title: Text(
             "My Project 02",
             style: TextStyle(
@@ -24,6 +24,9 @@ void main(){
             Icon(Icons.notifications, color: Colors.deepOrange,),
             SizedBox(width: 10,),
           ],
+        ),
+        body: Center(
+          child: Text("Tapos Roy"),
         ),
       ),
     )
