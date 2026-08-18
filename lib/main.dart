@@ -26,12 +26,19 @@ void main(){
           ],
         ),
         body: Center(
-          child: Text(
-            "Tapos Roy",
-            style: TextStyle(
-                color: Colors.green,
-              fontSize: 24,
-              fontWeight: FontWeight.bold
+          child: Container(
+            height: 40,
+            width: 180,
+            color: Colors.grey,
+            child: Center(
+              child: Text(
+                "Tapos Roy",
+                style: TextStyle(
+                    color: Colors.green,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
             ),
           ),
         ),
