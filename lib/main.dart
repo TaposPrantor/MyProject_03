@@ -29,17 +29,15 @@ void main(){
           child: Container(
             height: 40,
             width: 180,
-            decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(15)
-            ),
-            child: Center(
-              child: Text(
-                "Tapos Roy",
-                style: TextStyle(
-                    color: Colors.green,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold
+            child: Card(
+              child: Center(
+                child: Text(
+                  "Tapos Roy",
+                  style: TextStyle(
+                      color: Colors.green,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold
+                  ),
                 ),
               ),
             ),
