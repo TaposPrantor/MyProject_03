@@ -26,7 +26,14 @@ void main(){
           ],
         ),
         body: Center(
-          child: Text("Tapos Roy", style: TextStyle(color: Colors.green),),
+          child: Text(
+            "Tapos Roy",
+            style: TextStyle(
+                color: Colors.green,
+              fontSize: 24,
+              fontWeight: FontWeight.bold
+            ),
+          ),
         ),
       ),
     )
