@@ -33,6 +33,7 @@ void main(){
                 height: 40,
                 width: 180,
                 child: Card(
+                  color: Colors.blue,
                   child: Center(
                     child: Text(
                       "Tapos Roy",
@@ -49,6 +50,7 @@ void main(){
                 height: 40,
                 width: 180,
                 child: Card(
+                  shadowColor: Colors.deepOrange,
                   child: Center(
                     child: Text(
                       "Tapos Roy",
