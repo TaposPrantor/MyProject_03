@@ -29,7 +29,7 @@ void main(){
           child: Container(
             height: 40,
             width: 180,
-            color: Colors.grey,
+            color: Colors.grey.shade200,
             child: Center(
               child: Text(
                 "Tapos Roy",
