@@ -6,6 +6,7 @@ void main(){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          leading: Icon(Icons.menu),
           title: Text(
             "My Project 02",
             style: TextStyle(
