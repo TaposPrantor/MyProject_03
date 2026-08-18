@@ -31,6 +31,7 @@ void main(){
             width: 180,
             decoration: BoxDecoration(
               color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(15)
             ),
             child: Center(
               child: Text(
