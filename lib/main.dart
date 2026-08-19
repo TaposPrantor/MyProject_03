@@ -6,7 +6,12 @@ void main(){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.menu, color: Colors.deepOrange,), // color not needed
+          leading: InkWell(
+            onTap: () {
+
+            },
+              child: Icon(Icons.menu, color: Colors.deepOrange,)
+          ), // color not needed
           title: Text(
             "My Project 02",
             style: TextStyle(
@@ -17,6 +22,7 @@ void main(){
           ),
           centerTitle: true,
           backgroundColor: Colors.orange.shade50,
+          shadowColor: Colors.deepOrange,
           toolbarHeight: 50,
           actions: [
             Icon(Icons.search, color: Colors.deepOrange,),
