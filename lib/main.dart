@@ -6,12 +6,29 @@ void main(){
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: InkWell(
-            onTap: () {
-
+          leading: PopupMenuButton<String>(
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.deepOrange,
+            ),
+            onSelected: (value) {
+              print(value);
             },
-              child: Icon(Icons.menu, color: Colors.deepOrange,)
-          ), // color not needed
+            itemBuilder: (context) => [
+              const PopupMenuItem(
+                value: 'home',
+                child: Text('Home'),
+              ),
+              const PopupMenuItem(
+                value: 'profile',
+                child: Text('Profile'),
+              ),
+              const PopupMenuItem(
+                value: 'settings',
+                child: Text('Settings'),
+              ),
+            ],
+          ),// color not needed
           title: Text(
             "My Project 02",
             style: TextStyle(
