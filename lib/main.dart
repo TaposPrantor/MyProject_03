@@ -12,20 +12,44 @@ void main(){
               color: Colors.deepOrange,
             ),
             onSelected: (value) {
-              print(value);
+              if (value == 'profile') {
+                print('Profile clicked');
+              } else if (value == 'settings') {
+                print('Settings clicked');
+              } else if (value == 'logout') {
+                print('Logout clicked');
+              }
             },
             itemBuilder: (context) => [
               const PopupMenuItem(
-                value: 'home',
-                child: Text('Home'),
-              ),
-              const PopupMenuItem(
                 value: 'profile',
-                child: Text('Profile'),
+                child: Row(
+                  children: [
+                    Icon(Icons.person),
+                    SizedBox(width: 10),
+                    Text('Profile'),
+                  ],
+                ),
               ),
               const PopupMenuItem(
                 value: 'settings',
-                child: Text('Settings'),
+                child: Row(
+                  children: [
+                    Icon(Icons.settings),
+                    SizedBox(width: 10),
+                    Text('Settings'),
+                  ],
+                ),
+              ),
+              const PopupMenuItem(
+                value: 'logout',
+                child: Row(
+                  children: [
+                    Icon(Icons.logout),
+                    SizedBox(width: 10),
+                    Text('Logout'),
+                  ],
+                ),
               ),
             ],
           ),// color not needed
