@@ -64,7 +64,7 @@ void main(){
           centerTitle: true,
           backgroundColor: Colors.orange.shade50,
           shadowColor: Colors.deepOrange,
-          toolbarHeight: 50,
+          toolbarHeight: 40,
           actions: [
             Icon(Icons.search, color: Colors.deepOrange,size: 12,),
             SizedBox(width: 10,),
@@ -81,6 +81,23 @@ void main(){
                 width: 180,
                 child: Card(
                   color: Colors.blue,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  shadowColor: Colors.deepOrange,
                   child: Center(
                     child: Text(
                       "Tapos Roy",
