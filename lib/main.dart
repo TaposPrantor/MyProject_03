@@ -68,7 +68,7 @@ void main(){
           actions: [
             Icon(Icons.search, color: Colors.deepOrange,),
             SizedBox(width: 10,),
-            Icon(Icons.notifications, color: Colors.deepOrange,),
+            Icon(Icons.notifications, color: Colors.deepOrange,size: 10,),
             SizedBox(width: 10,),
           ],
         ),
