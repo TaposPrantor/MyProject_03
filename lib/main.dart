@@ -66,7 +66,7 @@ void main(){
           shadowColor: Colors.deepOrange,
           toolbarHeight: 50,
           actions: [
-            Icon(Icons.search, color: Colors.deepOrange,),
+            Icon(Icons.search, color: Colors.deepOrange,size: 12,),
             SizedBox(width: 10,),
             Icon(Icons.notifications, color: Colors.deepOrange,size: 10,),
             SizedBox(width: 10,),
