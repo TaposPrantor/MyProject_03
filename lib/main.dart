@@ -115,13 +115,13 @@ void main(){
                 width: 180,
                 child: Card(
                   shadowColor: Colors.deepOrange,
-                  color: Colors.green,
+                  color: Colors.green.shade100,
                   child: Center(
                     child: Text(
                       "Tapos Roy",
                       style: TextStyle(
                           color: Colors.green,
-                        fontSize: 24,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold
                       ),
                     ),
