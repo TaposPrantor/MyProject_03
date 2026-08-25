@@ -139,7 +139,7 @@ void main(){
                       style: TextStyle(
                           color: Colors.green,
                         fontSize: 18,
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.w500
                       ),
                     ),
                   ),
