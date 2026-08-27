@@ -180,6 +180,58 @@ void main(){
                   ),
                 ),
               ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  color: Colors.blue,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  shadowColor: Colors.deepOrange,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),//Comment For Me?
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  shadowColor: Colors.deepOrange,
+                  color: Colors.green.shade100,
+                  child: Center(
+                    child: Text(
+                      "Container",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
