@@ -161,7 +161,7 @@ void main(){
                     ),
                   ),
                 ),
-              ),//Comment For Me?
+              ),
               Container(
                 height: 40,
                 width: 180,
@@ -213,7 +213,7 @@ void main(){
                     ),
                   ),
                 ),
-              ),//Comment For Me?
+              ),
               Container(
                 height: 40,
                 width: 180,
@@ -223,6 +223,59 @@ void main(){
                   child: Center(
                     child: Text(
                       "Container",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  color: Colors.blue,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  shadowColor: Colors.deepOrange,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  //shadowColor: Colors.deepPurple,
+                  //color: Colors.green.shade100,
+                  surfaceTintColor:Colors.grey,
+                  child: Center(
+                    child: Text(
+                      "Container 3",
                       style: TextStyle(
                           color: Colors.green,
                           fontSize: 18,
