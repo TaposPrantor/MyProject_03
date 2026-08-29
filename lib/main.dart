@@ -302,6 +302,23 @@ void main(){
                   ),
                 ),
               ),
+              Container(
+                height: 40,
+                width: 180,
+                child: Card(
+                  shadowColor: Colors.deepOrange,
+                  child: Center(
+                    child: Text(
+                      "Tapos Roy",
+                      style: TextStyle(
+                          color: Colors.green,
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
