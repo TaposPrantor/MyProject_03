@@ -70,7 +70,8 @@ void main(){
             SizedBox(width: 10,),
             Icon(Icons.notifications, color: Colors.deepOrange,size: 10,),
             SizedBox(width: 10,),
-            Icon(Icons.refresh)
+            Icon(Icons.refresh, color: Colors.deepOrange, size: 12,),
+            SizedBox(width: 10,),
           ],
         ),
         body: Center(
